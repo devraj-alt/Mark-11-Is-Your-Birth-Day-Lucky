@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&display=swap');
+
+body {
+    background-image: url('confetti-doodles.svg');
+    text-align: center;
+    background-color: #8B5CF6;
+    margin: 0px;
+}
+
+.heading {
+    font-family: Rampart One;
+    font-size: 60px;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.container input {
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#birth-date {
+    height: 35px;
+    width: 203px;
+    border-radius: 5px;
+}
+
+#lucky-number {
+    margin-top: 20px;
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#btn {
+    width: 130px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: none;
+    color: #DC2626;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    background: white;
+    position: relative;
+}
+
+#btn::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    border-radius: 50px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    transform: scale(0.8);
+    transition: transform .45s;
+}
+
+#btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    filter: blur(10px);
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    transform: scale(0.5);
+    transition: transform .45s;
+}
+
+#btn:hover::before,
+submit-Btn:hover::after {
+    transform: scale(1);
+}
+
+
+#show-result {
+    height: 35px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+textarea {
+    text-align: center;
+    font-family: Noto Sans HK;
+    font-size: 23px;
+    font-weight: bolder;
+}
